@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="flex flex-col justify-center items-center min-h-screen">
+  <h1>Match Planner</h1>
+  <p>
+    Plan your cricket/football/whatever matches, invite your friends, set
+    timings/locations and positions, and chat!
+  </p>
+  <button class="btn btn-accent">Create Account</button>
+</div>
