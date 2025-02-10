@@ -1,2 +1,1 @@
-<h1>Hello, User!</h1>
-<button class="btn btn-accent">Create Account</button>
+<h1>Hello, World!</h1>

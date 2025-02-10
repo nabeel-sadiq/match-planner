@@ -10,7 +10,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"db:push": "drizzle-kit push",
 		"db:migrate": "drizzle-kit migrate",
-		"db:studio": "drizzle-kit studio"
+		"db:studio": "drizzle-kit studio",
+		"db:generate": "drizzle-kit generate"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^4.0.0",
@@ -24,6 +25,7 @@
 	},
 	"dependencies": {
 		"@libsql/client": "^0.14.0",
+		"better-auth": "^1.1.16",
 		"daisyui": "^5.0.0-beta.7",
 		"drizzle-orm": "^0.38.4"
 	}
