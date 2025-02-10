@@ -1,3 +1,5 @@
+import { authClient } from '$lib/auth-client';
+
 /** @satisfies {import('./$types').Actions} */
 export const actions = {
   default: async ({ request }) => {
@@ -6,6 +8,10 @@ export const actions = {
     const email = data.get('email');
     const password = data.get('password');
 
-    console.log(username, email, password);
+    const { userData, error } = await authClient.signUp.email({
+      email: email,
+      password: password,
+      name: username
+    });
   }
 };
