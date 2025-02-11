@@ -9,10 +9,16 @@
     class="flex flex-col min-h-screen gap-2 justify-center items-center"
     method="post"
   >
-    <h1 class="text-2xl font-bold">Create Account</h1>
+    <h1 class="text-3xl mb-2 font-bold">Create Account</h1>
     <UsernameInput />
     <EmailInput />
     <PasswordInput />
     <button class="btn btn-accent w-full" type="submit">Sign Up</button>
+    <p class="mt-2">
+      Already have an account? Login <a
+        class="text-primary hover:underline"
+        href="/auth/login">here.</a
+      >
+    </p>
   </form>
 </div>
