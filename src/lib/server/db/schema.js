@@ -2,7 +2,7 @@ import { sqliteTable, text, integer, } from "drizzle-orm/sqlite-core";
 
 export const match = sqliteTable("match", {
   id: text("id").primaryKey(),
-  userID: integer('user_id').notNull().references(() => user.id),
+  userID: integer('user_id').notNull().references(() => user.id, { onDelete: 'cascade' }),
   matchName: text('match_name').notNull(),
   matchSport: text('match_sport').notNull(),
   matchLocation: text('match_location').notNull(),
